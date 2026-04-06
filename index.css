@@ -22,7 +22,6 @@ html {
 
 header {
     background: linear-gradient(135deg, #f8c8dc, #f5b6cf);
-    color: #333;
     color: white;
     text-align: center;
     padding: 25px;
@@ -96,8 +95,6 @@ button:hover {
     background: #2980b9;
 }
 
-
-
 /* SKILLS */
 .skill {
     margin-bottom: 20px;
@@ -106,29 +103,32 @@ button:hover {
 .skill-info {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 5px;
+    gap: 0.625rem;          
+    margin-bottom: 0.3125rem; 
 }
 
 .skill-info img {
-    width: 25px;
-    height: 25px;
+    width: 1.5625rem;   
+    height: 1.5625rem;
 }
 
-/* BARRA */
+
 .barra {
     width: 100%;
-    height: 12px;
+    height: 0.75rem;   
     background: #ddd;
-    border-radius: 10px;
+    border-radius: 0.625rem; 
     overflow: hidden;
+}
+
+html {
+    font-size: 16px;
 }
 
 .progreso {
     height: 100%;
     border-radius: 10px;
 }
-
 
 .html {
     width: 90%;
@@ -171,7 +171,6 @@ button:hover {
     text-align: left;
 }
 
-
 .formulario input,
 .formulario textarea {
     width: 100%;
@@ -181,7 +180,6 @@ button:hover {
     border: 1px solid #ccc;
     font-family: 'Poppins', sans-serif;
 }
-
 
 .formulario button {
     background: #8e44ad;
@@ -221,6 +219,11 @@ header {
     object-fit: cover;
     margin-bottom: 5px; 
     border: 4px solid white;
+    transition: transform 0.3s;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.05);
 }
 
 header h1 {
@@ -234,15 +237,6 @@ header p {
 .menu {
     margin-top: 10px;
 }
-
-.foto-perfil {
-    transition: transform 0.3s;
-}
-
-.foto-perfil:hover {
-    transform: scale(1.05);
-}
-
 
 .mensaje-exito {
     display: none;
