@@ -200,30 +200,23 @@
 <script src="script.js"></script>
 
 <script>
-function enviarForm(e) {
-    e.preventDefault();
-
-    const mensaje = document.getElementById("mensajeExito");
-
-    mensaje.style.display = "block";
-
-    // opcional: ocultar después
-    setTimeout(function() {
-        mensaje.style.display = "none";
-    }, 3000);
+function sendForm(e) { 
+    e.preventDefault(); 
+    const successMessage = document.getElementById("mensajeExito"); 
+    successMessage.style.display = "block"; 
+    setTimeout(function() { 
+        successMessage.style.display = "none"; 
+    }, 3000); 
 }
-</script>
 
-<script>
-function cambiarFrase() {
-    const frases = [
-        "Nunca dejes de aprender 🚀",
-        "El código es creatividad 💻",
-        "Cada error es una oportunidad 🔥"
-    ];
-
-    const random = Math.floor(Math.random() * frases.length);
-    document.getElementById("frase").innerText = frases[random];
+function changePhrase() { 
+    const phrases = [ 
+        "Nunca dejes de aprender 🚀", 
+        "El código es creatividad 💻", 
+        "Cada error es una oportunidad 🔥" 
+    ]; 
+    const randomIndex = Math.floor(Math.random() * phrases.length); 
+    document.getElementById("frase").innerText = phrases[randomIndex]; 
 }
 </script>
 
