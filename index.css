@@ -103,22 +103,26 @@ button:hover {
 .skill-info {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 5px;
+    gap: 0.625rem;          
+    margin-bottom: 0.3125rem; 
 }
 
 .skill-info img {
-    width: 25px;
-    height: 25px;
+    width: 1.5625rem;   
+    height: 1.5625rem;
 }
 
-/* BARRA */
+
 .barra {
     width: 100%;
-    height: 12px;
+    height: 0.75rem;   
     background: #ddd;
-    border-radius: 10px;
+    border-radius: 0.625rem; 
     overflow: hidden;
+}
+
+html {
+    font-size: 16px;
 }
 
 .progreso {
